@@ -9,9 +9,11 @@ GET https://azuretestfunctionrestapi.azurewebsites.net/api/tasks - list all task
 GET https://azuretestfunctionrestapi.azurewebsites.net/api/task/ {{task ID}} - list a tasks (must post a task, to get something back)
 
 POST  https://azuretestfunctionrestapi.azurewebsites.net/api/task - create a task
+
     body-> { taskDescription: "Testtask"}
     
 PUT https://azuretestfunctionrestapi.azurewebsites.net/api/task/ {{task ID}} - update a task
+
     body-> { isCompleted: true}    
     
 
